@@ -1,4 +1,4 @@
-public class Primitives
+ public class Primitives
 {
     public static void main(String[] args) {
         int rollno = 62; //integer size 4 bytes
