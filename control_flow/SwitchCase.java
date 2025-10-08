@@ -1,3 +1,4 @@
+package control_flow;
 import java.util.Scanner;
 
 /**
@@ -9,47 +10,58 @@ public class SwitchCase {
     public static void main(String[] args) {
         // Create a Scanner object to read user input
         Scanner input = new Scanner(System.in);
-        
-        // Prompt the user for input
-        System.out.print("Enter a number (1-7) to check the day: ");
-        
-        // Check if the input is an integer
-        if (input.hasNextInt()) {
-            int dayNumber = input.nextInt();
-            
-            // Use switch-case to determine the day of the week
-            switch (dayNumber) {
-                case 1:
-                    System.out.println("Monday - Weekday");
-                    break;
-                case 2:
-                    System.out.println("Tuesday - Weekday");
-                    break;
-                case 3:
-                    System.out.println("Wednesday - Weekday");
-                    break;
-                case 4:
-                    System.out.println("Thursday - Weekday");
-                    break;
-                case 5:
-                    System.out.println("Friday - Weekday");
-                    break;
-                case 6:
-                    System.out.println("Saturday - Weekend");
-                    break;
-                case 7:
-                    System.out.println("Sunday - Weekend");
-                    break;
-                default:
-                    System.out.println("Invalid input! Please enter a number between 1 and 7.");
-            }
-        } else {
-            // Handle non-integer input
-            System.out.println("Error: Please enter a valid number!");
+        int day = input.nextInt();
+
+        //         // Prompt the user for input
+        //         System.out.print("Enter a number (1-7) to check the day: ");
+
+        //         // Check if the input is an integer
+        //         if (input.hasNextInt()) {
+        //             int dayNumber = input.nextInt();
+
+        //             // Use switch-case to determine the day of the week
+        //             switch (dayNumber) {
+        //                 case 1:
+        //                     System.out.println("Monday - Weekday");
+        //                     break;
+        //                 case 2:
+        //                     System.out.println("Tuesday - Weekday");
+        //                     break;
+        //                 case 3:
+        //                     System.out.println("Wednesday - Weekday");
+        //                     break;
+        //                 case 4:
+        //                     System.out.println("Thursday - Weekday");
+        //                     break;
+        //                 case 5:
+        //                     System.out.println("Friday - Weekday");
+        //                     break;
+        //                 case 6:
+        //                     System.out.println("Saturday - Weekend");
+        //                     break;
+        //                 case 7:
+        //                     System.out.println("Sunday - Weekend");
+        //                     break;
+        //                 default:
+        //                     System.out.println("Invalid input! Please enter a number between 1 and 7.");
+        //             }
+        //         } else {
+        //             // Handle non-integer input
+        //             System.out.println("Error: Please enter a valid number!");
+        //         }
+
+        //         // Close the scanner to prevent resource leaks
+        //         input.close();
+        //     }
+        // }
+
+        switch (day) {
+            case 1, 2, 3, 4, 5:
+                System.out.println("Weekday");
+            case 6, 7:
+                System.out.println("Weekend");
+           
         }
-        
-        // Close the scanner to prevent resource leaks
-        input.close();
     }
 }
 
