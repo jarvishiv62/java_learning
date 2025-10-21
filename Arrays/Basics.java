@@ -33,6 +33,8 @@ import java.util.Scanner;
  * primitives are stored in stack memory only 
  * objects are stored in heap memory only
  * 
- * 
+ * Use HashMap → when speed matters, order doesn’t.
+ * Use LinkedHashMap → when you want insertion order maintained.
+ * Use TreeMap → when you want sorted keys.
  * 
  */ 
